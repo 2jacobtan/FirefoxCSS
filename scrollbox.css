@@ -1,0 +1,8 @@
+/* popup > menu > menupopup, */
+/* menupopup > menu > menupopup, */
+popup,
+menupopup scrollbox
+{
+	background-color: #2B2B2B !important;
+  border: none !important;
+}

@@ -1,0 +1,16 @@
+https://groups.google.com/forum/#!topic/mozilla.support.firefox/Mf4dQFZSvzI
+
+/* Hide most entries in bookmarks menu */
+/* To replace Show-All-Bookmarks just create a bookmark to: */
+/* chrome://browser/content/places/places.xul */
+#bookmarksMenuPopup menuitem[id="bookmarksShowAll"],
+#bookmarksMenuPopup #organizeBookmarksSeparator,
+#bookmarksMenuPopup menuitem[id="menu_bookmarkThisPage"],
+#bookmarksMenuPopup menuitem[id="subscribeToPageMenuitem"],
+#bookmarksMenuPopup #bookmarksToolbarSeparator,
+#bookmarksMenuPopup menu[container="true"][id="bookmarksToolbarFolderMenu"],
+#bookmarksMenuPopup #bookmarksMenuItemsSeparator,
+#bookmarksMenuPopup menuitem[id="menu_unsortedBookmarks"],
+#bookmarksMenuPopup
+menuseparator[class="hide-if-empty-places-result"][builder="end"]
+{display: none !important; }
